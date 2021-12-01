@@ -10,24 +10,26 @@ useEffect(() => {
 
     async function fetchData() {
         let result = await axios.get(
-            'https://api.themoviedb.org/3/discover/tv?api_key=9ad199296490af335b60d2b01389b'
+            'https://api.themoviedb.org/3/discover/tv?api_key=9ad199296490af335b60d2b01389b049'
         )
 
         setMovie(result.data.results[0])
+        
     }
-
+    fetchData();
 }, [])
  
 
 // axios.get('https://api.themoviedb.org/3/movie/550?api_key=9ad199296490af335b60d2b01389b049')
 // .then(function(result){
 //     console.log(result);
-    
+   
 // })
+
 
     const bannerStyle = {
         backgroundSize : "cover",
-        backgroundImage : `url('https://t1.daumcdn.net/cfile/tistory/99DFAA415D3A558E01')`,
+        backgroundImage : `url(https://image.tmdb.org/t/p/original/${movie.backdrop_path})`,
         backgroundPositon: "center center"
     } 
     // 이게뭐냐면 css에서 써야 맞는 css스타일 을 오브젝트화 시켜서 아래에다가 넘긴건대
