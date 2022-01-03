@@ -1,34 +1,49 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react' 
 import "./index.css"
-import axios from "axios";
+import axios from "../axios";
+import urls from "../Movieurl"
+
 function Banner() {
-    const [movies, setMovies] = useState([]);
-    useEffect(() => {
-        async function fetchData() {
-            let result = await axios.get(
-                'https://api.themoviedb.org/3/movie/550?api_key=9ad199296490af335b60d2b01389b049'
-            )
-            setMovies(result)
-        }
-        fetchData();
-        console.log(movies);
-    }, [])
-    const bannerStyle = {
-        backgroundSize: "cover",
-        backgroundImage: `url('http://image.tmdb.org/t/p/original/${movies.data.backdrop_path}')`,
-        backgroundPosition: "center center"
+
+
+    const cutText = (string,n)=>{
+        return string?.length>n ? string.substr(0,n)+"...":string}
+    
+
+    const [movie, setMovie] = useState([]);
+
+   useEffect(() => {
+    async function fetchData() {
+        // let result = await axios.get(urls.fetchNetflixOriginals)
+        
+        let result = await axios.get(urls.fetchNetflixOriginals)
+        
+       
+        setMovie(result.data.results[
+            Math.floor(Math.random()*20)
+        ])
+  
     }
+    fetchData();
+
+}, []) //여기에 useEffect의 첫번째 인자에 사용되는 state나 prop을 넣어줘야
+     const bannerStyle  = {
+         backgroundSize: "100%",
+         backgroundImage : `url('https://image.tmdb.org/t/p/original/${movie.backdrop_path}')`,
+         backgroundPosition: "cente center"
+        
+     }
 
     return (
-        <> < div className = "Banner-contents" style = {bannerStyle}> 
+        <> < div className = "Banner-contents" style = {bannerStyle}>   
         <h1 className="banner-title">
-        {movies.data.original_title}</h1>
+        {movie?.name}</h1>
 
         <button className="banner-button">play</button>
-        <div className="Banner-player"></div>
         
+        <div className="banner-desc">{cutText(movie?.overview)}</div>
         <button className="banner-button">my list</button>
-        <div className="banner-desc">{movies.data.overview}</div>
+
 
     </div>
 </>
