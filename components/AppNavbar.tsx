@@ -21,8 +21,8 @@ import {
   CRow,
   CCol,
 } from "@coreui/react";
-import CIcon from "@coreui/icons-react";
-import * as icon from "@coreui/icons";
+// import CIcon from "@coreui/icons-react";
+// import * as icon from "@coreui/icons";
 
 function AppNavbar() {
   const [visible, setVisible] = useState(false);
@@ -81,8 +81,8 @@ function AppNavbar() {
               <CForm className="d-flex">
                 <CFormInput type="search" placeholder="검색" />
               </CForm>
-              <CIcon icon={icon.cilUser} size="xxl" className="ms-2" />
-              <CIcon icon={icon.cilBasket} size="xxl" className="ms-2" />
+              {/* <CIcon icon={icon.cilUser} size="xxl" className="ms-2" />
+              <CIcon icon={icon.cilBasket} size="xxl" className="ms-2" /> */}
             </CNavbarNav>
           </CCollapse>
         </CContainer>
