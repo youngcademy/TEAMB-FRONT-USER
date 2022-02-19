@@ -23,7 +23,8 @@ import {
 } from "@coreui/react";
 // import CIcon from "@coreui/icons-react";
 // import * as icon from "@coreui/icons";
-import { FaShoppingBasket, FaUser } from "react-icons/fa";
+import { FiUser } from "react-icons/fi";
+import { BsBasket } from "react-icons/bs";
 
 function AppNavbar() {
   const [visible, setVisible] = useState(false);
@@ -79,8 +80,8 @@ function AppNavbar() {
               </CNavItem>
             </CNavbarNav>
             <CNavbarNav>
-              <FaUser size="35" />
-              <FaShoppingBasket size="35" />
+              <FiUser size="35" />
+              <BsBasket size="35" />
               <CForm className="d-flex">
                 <CFormInput type="search" placeholder="검색" />
               </CForm>
