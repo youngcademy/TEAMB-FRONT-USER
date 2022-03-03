@@ -1,12 +1,12 @@
-import type { NextPage } from "next";
-import AppNavbar from "./AppNavbar";
+import type { NextPage } from 'next';
+import AppNavbar from './AppNavbar';
 
-const Mainheader: NextPage = () => {
-  return (
-    <>
-      <AppNavbar />
-    </>
-  );
+const MainHeader: NextPage = () => {
+    return (
+        <>
+            <AppNavbar />
+        </>
+    );
 };
 
-export default Mainheader;
+export default MainHeader;
