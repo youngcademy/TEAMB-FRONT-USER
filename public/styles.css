@@ -1,8 +1,3 @@
-.userfrontimage {
-    display: flex;
-    width: calc(100% - 30px);
-}
-
 .smallproducts {
     padding: 1.5rem;
 
