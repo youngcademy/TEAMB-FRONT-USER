@@ -20,9 +20,69 @@ import {
 const Mypage: NextPage = () => {
     return (
         <>
+            {/* 쿠폰 */}
+            <CCard color="dark">
+                <CCardBody className="text-center center">
+                    <CRow>
+                        <CCol>
+                            <CCard color="dark" textColor="white">
+                                <CCardBody>
+                                    <CCardTitle>TEAMB님 반갑습니다</CCardTitle>
+                                    <CCardText>
+                                        현재 회원님의 등급은 vip입니다
+                                    </CCardText>
+                                </CCardBody>
+                            </CCard>
+                        </CCol>
+                        <CCol sm={2}>
+                            <CCard
+                                className="rounded-circle"
+                                style={{ maxWidth: '6rem' }}
+                            >
+                                <CCardBody>
+                                    <CCardTitle>쿠폰</CCardTitle>
+                                    <CCardText>0</CCardText>
+                                </CCardBody>
+                            </CCard>
+                        </CCol>
+                        <CCol sm={2}>
+                            <CCard
+                                className="rounded-circle"
+                                style={{ maxWidth: '6rem' }}
+                            >
+                                <CCardBody>
+                                    <CCardTitle>쿠폰</CCardTitle>
+                                    <CCardText>0</CCardText>
+                                </CCardBody>
+                            </CCard>
+                        </CCol>
+                        <CCol sm={2}>
+                            <CCard
+                                className="rounded-circle"
+                                style={{ maxWidth: '6rem' }}
+                            >
+                                <CCardBody>
+                                    <CCardTitle>쿠폰</CCardTitle>
+                                    <CCardText>0</CCardText>
+                                </CCardBody>
+                            </CCard>
+                        </CCol>
+                        <CCol sm={2}>
+                            <CCard
+                                className="rounded-circle"
+                                style={{ maxWidth: '6rem' }}
+                            >
+                                <CCardBody>
+                                    <CCardTitle>쿠폰</CCardTitle>
+                                    <CCardText>0</CCardText>
+                                </CCardBody>
+                            </CCard>
+                        </CCol>
+                    </CRow>
+                </CCardBody>
+            </CCard>
             {/* 주문상태 */}
-            <CCard>
-                <CCardHeader>TEAM B(사용자 이름)</CCardHeader>
+            <CCard color="light">
                 <CCardBody>
                     <CRow>
                         <CCol sm={3}>
@@ -30,7 +90,9 @@ const Mypage: NextPage = () => {
                                 <CCardBody>
                                     <CCardTitle>입금/결제</CCardTitle>
                                     <CCardText>0</CCardText>
-                                    <CButton href="#">주문내역</CButton>
+                                    <CButton href="#" color="info">
+                                        주문내역
+                                    </CButton>
                                 </CCardBody>
                             </CCard>
                         </CCol>
@@ -39,7 +101,9 @@ const Mypage: NextPage = () => {
                                 <CCardBody>
                                     <CCardTitle>배송중</CCardTitle>
                                     <CCardText>2</CCardText>
-                                    <CButton href="#">배송조회</CButton>
+                                    <CButton href="#" color="light">
+                                        배송조회
+                                    </CButton>
                                 </CCardBody>
                             </CCard>
                         </CCol>
@@ -48,7 +112,9 @@ const Mypage: NextPage = () => {
                                 <CCardBody>
                                     <CCardTitle>배송완료</CCardTitle>
                                     <CCardText>1</CCardText>
-                                    <CButton href="#">상세보기</CButton>
+                                    <CButton href="#" color="light">
+                                        상세보기
+                                    </CButton>
                                 </CCardBody>
                             </CCard>
                         </CCol>
@@ -57,24 +123,16 @@ const Mypage: NextPage = () => {
                                 <CCardBody>
                                     <CCardTitle>취소/교환/환불</CCardTitle>
                                     <CCardText>0</CCardText>
-                                    <CButton href="#">상세보기</CButton>
+                                    <CButton href="#" color="light">
+                                        상세보기
+                                    </CButton>
                                 </CCardBody>
                             </CCard>
                         </CCol>
                     </CRow>
                 </CCardBody>
             </CCard>
-            {/* 쿠폰 */}
-            <CCard className="text-center">
-                <CCardHeader>쿠폰</CCardHeader>
-                <CCardBody>
-                    <CCardTitle>Special title treatment</CCardTitle>
-                    <CCardText>
-                        With supporting text below as a natural lead-in to
-                        additional content.
-                    </CCardText>
-                </CCardBody>
-            </CCard>
+
             {/* 주문목록테이블 */}
             <CTable>
                 <CTableHead>
@@ -94,13 +152,11 @@ const Mypage: NextPage = () => {
                         <CTableHeaderCell scope="row">1</CTableHeaderCell>
                         <CTableDataCell>Mark</CTableDataCell>
                         <CTableDataCell>Otto</CTableDataCell>
-                        <CTableDataCell>@mdo</CTableDataCell>
                     </CTableRow>
                     <CTableRow>
                         <CTableHeaderCell scope="row">2</CTableHeaderCell>
                         <CTableDataCell>Jacob</CTableDataCell>
                         <CTableDataCell>Thornton</CTableDataCell>
-                        <CTableDataCell>@fat</CTableDataCell>
                     </CTableRow>
                     <CTableRow>
                         <CTableHeaderCell scope="row">3</CTableHeaderCell>
