@@ -21,12 +21,12 @@ const Mypage: NextPage = () => {
     return (
         <>
             {/* 쿠폰 */}
-            <CCard color="dark" className="rounded-0">
+            <CCard color="black" className="rounded-0">
                 <CCardBody className="text-center">
                     <CRow>
                         <CCol>
                             <CCard
-                                color="dark"
+                                color="black"
                                 textColor="white"
                                 className="border-0"
                             >
@@ -87,14 +87,14 @@ const Mypage: NextPage = () => {
             </CCard>
             {/* 주문상태 */}
             <CCard color="light" className="rounded-0">
-                <CCardBody>
+                <CCardBody className="text-center">
                     <CRow>
                         <CCol sm={3}>
                             <CCard>
                                 <CCardBody>
                                     <CCardTitle>입금/결제</CCardTitle>
                                     <CCardText>0</CCardText>
-                                    <CButton href="#" color="info">
+                                    <CButton color="info" shape="rounded-pill">
                                         주문내역
                                     </CButton>
                                 </CCardBody>
@@ -105,7 +105,11 @@ const Mypage: NextPage = () => {
                                 <CCardBody>
                                     <CCardTitle>배송중</CCardTitle>
                                     <CCardText>2</CCardText>
-                                    <CButton href="#" color="light">
+                                    <CButton
+                                        href="#"
+                                        color="info"
+                                        shape="rounded-pill"
+                                    >
                                         배송조회
                                     </CButton>
                                 </CCardBody>
@@ -116,7 +120,11 @@ const Mypage: NextPage = () => {
                                 <CCardBody>
                                     <CCardTitle>배송완료</CCardTitle>
                                     <CCardText>1</CCardText>
-                                    <CButton href="#" color="light">
+                                    <CButton
+                                        href="#"
+                                        color="info"
+                                        shape="rounded-pill"
+                                    >
                                         상세보기
                                     </CButton>
                                 </CCardBody>
@@ -127,7 +135,11 @@ const Mypage: NextPage = () => {
                                 <CCardBody>
                                     <CCardTitle>취소/교환/환불</CCardTitle>
                                     <CCardText>0</CCardText>
-                                    <CButton href="#" color="light">
+                                    <CButton
+                                        href="#"
+                                        color="info"
+                                        shape="rounded-pill"
+                                    >
                                         상세보기
                                     </CButton>
                                 </CCardBody>
