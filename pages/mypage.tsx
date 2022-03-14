@@ -55,8 +55,18 @@ const Mypage: NextPage = () => {
                                 style={{ maxWidth: '6rem' }}
                             >
                                 <CCardBody>
-                                    <CCardTitle>쿠폰</CCardTitle>
-                                    <CCardText>0</CCardText>
+                                    <CCardTitle>포인트</CCardTitle>
+                                    <CCardText>0p</CCardText>
+                                </CCardBody>
+                            </CCard>
+                        </CCol>
+                        <CCol sm={2}>
+                            <CCard
+                                className="rounded-circle "
+                                style={{ maxWidth: '6rem' }}
+                            >
+                                <CCardBody className="fw-medium fs-4 lh-sm">
+                                    <CCardText>고객 센터</CCardText>
                                 </CCardBody>
                             </CCard>
                         </CCol>
@@ -65,20 +75,8 @@ const Mypage: NextPage = () => {
                                 className="rounded-circle"
                                 style={{ maxWidth: '6rem' }}
                             >
-                                <CCardBody>
-                                    <CCardTitle>쿠폰</CCardTitle>
-                                    <CCardText>0</CCardText>
-                                </CCardBody>
-                            </CCard>
-                        </CCol>
-                        <CCol sm={2}>
-                            <CCard
-                                className="rounded-circle"
-                                style={{ maxWidth: '6rem' }}
-                            >
-                                <CCardBody>
-                                    <CCardTitle>쿠폰</CCardTitle>
-                                    <CCardText>0</CCardText>
+                                <CCardBody className="fw-medium fs-4 lh-sm">
+                                    <CCardText>마이 데이터</CCardText>
                                 </CCardBody>
                             </CCard>
                         </CCol>
