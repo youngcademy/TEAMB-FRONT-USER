@@ -134,34 +134,41 @@ const Mypage: NextPage = () => {
             </CCard>
 
             {/* 주문목록테이블 */}
-            <CTable>
+
+            <CTable className="">
                 <CTableHead>
-                    <CTableRow>
-                        <CTableHeaderCell scope="col" colSpan={4}>
+                    <CTableRow style={{ height: '4rem' }}>
+                        <CTableHeaderCell scope="col" colSpan={5}>
                             주문리스트
                         </CTableHeaderCell>
                     </CTableRow>
                     <CTableRow>
-                        <CTableHeaderCell scope="col">Class</CTableHeaderCell>
-                        <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
-                        <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
+                        <CTableHeaderCell scope="col">
+                            상품정보
+                        </CTableHeaderCell>
+                        <CTableHeaderCell scope="col">
+                            주문일자
+                        </CTableHeaderCell>
+                        <CTableHeaderCell scope="col">
+                            주문번호
+                        </CTableHeaderCell>
+                        <CTableHeaderCell scope="col">
+                            주문금액
+                        </CTableHeaderCell>
+                        <CTableHeaderCell scope="col">
+                            주문상태
+                        </CTableHeaderCell>
                     </CTableRow>
                 </CTableHead>
                 <CTableBody>
-                    <CTableRow>
-                        <CTableHeaderCell scope="row">1</CTableHeaderCell>
-                        <CTableDataCell>Mark</CTableDataCell>
-                        <CTableDataCell>Otto</CTableDataCell>
-                    </CTableRow>
-                    <CTableRow>
-                        <CTableHeaderCell scope="row">2</CTableHeaderCell>
-                        <CTableDataCell>Jacob</CTableDataCell>
-                        <CTableDataCell>Thornton</CTableDataCell>
-                    </CTableRow>
-                    <CTableRow>
-                        <CTableHeaderCell scope="row">3</CTableHeaderCell>
-                        <CTableDataCell>Larry the Bird</CTableDataCell>
-                        <CTableDataCell>@twitter</CTableDataCell>
+                    <CTableRow className="text-center">
+                        <CTableHeaderCell
+                            scope="row"
+                            colSpan={5}
+                            style={{ height: '10rem' }}
+                        >
+                            주문내역이 없습니다
+                        </CTableHeaderCell>
                     </CTableRow>
                 </CTableBody>
             </CTable>
