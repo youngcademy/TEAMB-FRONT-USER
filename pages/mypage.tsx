@@ -94,7 +94,7 @@ const Mypage: NextPage = () => {
                                 <CCardBody>
                                     <CCardTitle>입금/결제</CCardTitle>
                                     <CCardText>0</CCardText>
-                                    <CButton color="info" shape="rounded-pill">
+                                    <CButton color="light" shape="rounded-pill">
                                         주문내역
                                     </CButton>
                                 </CCardBody>
@@ -107,7 +107,7 @@ const Mypage: NextPage = () => {
                                     <CCardText>2</CCardText>
                                     <CButton
                                         href="#"
-                                        color="info"
+                                        color="light"
                                         shape="rounded-pill"
                                     >
                                         배송조회
