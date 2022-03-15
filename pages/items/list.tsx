@@ -33,58 +33,162 @@ import {
 const List: NextPage = () => {
   return (
     <div className="bg-light">
-      <CRow xs={{ cols: 1 }} md={{ cols: 5 }} className="g-4">
-        <CCol xs>
-          <CCard className="h-100">
-            <Image src={leather} layout="responsive" width={400} height={400} />
-            <CCardBody>
-              <CCardTitle>핫한 여성용 가죽자켓</CCardTitle>
-              <CCardText>쎈언니</CCardText>
-              <CCardText>57,000원</CCardText>
-            </CCardBody>
-          </CCard>
-        </CCol>
-        <CCol xs>
-          <CCard className="h-100">
-            <Image src={slacks} layout="responsive" width={400} height={400} />
-            <CCardBody>
-              <CCardTitle>핫한 세미와이드 슬랙스</CCardTitle>
-              <CCardText>귀여운 마녀</CCardText>
-              <CCardText>22,000원</CCardText>
-            </CCardBody>
-          </CCard>
-        </CCol>
-        <CCol xs>
-          <CCard className="h-100">
-            <Image src={leather} layout="responsive" width={400} height={400} />
-            <CCardBody>
-              <CCardTitle>핫한 여성용 가죽자켓</CCardTitle>
-              <CCardText>쎈언니</CCardText>
-              <CCardText>57,000원</CCardText>
-            </CCardBody>
-          </CCard>
-        </CCol>
-        <CCol xs>
-          <CCard className="h-100">
-            <Image src={slacks} layout="responsive" width={400} height={400} />
-            <CCardBody>
-              <CCardTitle>핫한 세미와이드 슬랙스</CCardTitle>
-              <CCardText>귀여운 마녀</CCardText>
-              <CCardText>22,000원</CCardText>
-            </CCardBody>
-          </CCard>
-        </CCol>
-        <CCol xs>
-          <CCard className="h-100">
-            <Image src={leather} layout="responsive" width={400} height={400} />
-            <CCardBody>
-              <CCardTitle>핫한 여성용 가죽자켓</CCardTitle>
-              <CCardText>쎈언니</CCardText>
-              <CCardText>57,000원</CCardText>
-            </CCardBody>
-          </CCard>
-        </CCol>
-      </CRow>
+      <CContainer fluid>
+        <CRow xs={{ cols: 1, gutter: 3 }} md={{ cols: 5 }} className="mb-3">
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={leather}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 여성용 가죽자켓</CCardTitle>
+                <CCardText>쎈언니</CCardText>
+                <CCardText>57,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={slacks}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 세미와이드 슬랙스</CCardTitle>
+                <CCardText>귀여운 마녀</CCardText>
+                <CCardText>22,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={leather}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 여성용 가죽자켓</CCardTitle>
+                <CCardText>쎈언니</CCardText>
+                <CCardText>57,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={slacks}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 세미와이드 슬랙스</CCardTitle>
+                <CCardText>귀여운 마녀</CCardText>
+                <CCardText>22,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={leather}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 여성용 가죽자켓</CCardTitle>
+                <CCardText>쎈언니</CCardText>
+                <CCardText>57,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+        </CRow>
+        <CRow xs={{ cols: 1, gutter: 3 }} md={{ cols: 5 }} className="mb-3">
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={leather}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 여성용 가죽자켓</CCardTitle>
+                <CCardText>쎈언니</CCardText>
+                <CCardText>57,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={slacks}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 세미와이드 슬랙스</CCardTitle>
+                <CCardText>귀여운 마녀</CCardText>
+                <CCardText>22,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={leather}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 여성용 가죽자켓</CCardTitle>
+                <CCardText>쎈언니</CCardText>
+                <CCardText>57,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={slacks}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 세미와이드 슬랙스</CCardTitle>
+                <CCardText>귀여운 마녀</CCardText>
+                <CCardText>22,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+          <CCol xs>
+            <CCard className="h-100">
+              <Image
+                src={leather}
+                layout="responsive"
+                width={400}
+                height={400}
+              />
+              <CCardBody>
+                <CCardTitle>핫한 여성용 가죽자켓</CCardTitle>
+                <CCardText>쎈언니</CCardText>
+                <CCardText>57,000원</CCardText>
+              </CCardBody>
+            </CCard>
+          </CCol>
+        </CRow>
+      </CContainer>
     </div>
   );
 };
