@@ -20,69 +20,6 @@ import {
 const Mypage: NextPage = () => {
     return (
         <>
-            {/* 쿠폰 */}
-            <CCard color="black" className="rounded-0">
-                <CCardBody className="text-center">
-                    <CRow>
-                        <CCol>
-                            <CCard
-                                color="black"
-                                textColor="white"
-                                className="border-0"
-                            >
-                                <CCardBody>
-                                    <CCardTitle>TEAMB님 반갑습니다</CCardTitle>
-                                    <CCardText>
-                                        현재 회원님의 등급은 vip입니다
-                                    </CCardText>
-                                </CCardBody>
-                            </CCard>
-                        </CCol>
-                        <CCol sm={2}>
-                            <CCard
-                                className="rounded-circle"
-                                style={{ maxWidth: '6rem' }}
-                            >
-                                <CCardBody>
-                                    <CCardTitle>쿠폰</CCardTitle>
-                                    <CCardText>0</CCardText>
-                                </CCardBody>
-                            </CCard>
-                        </CCol>
-                        <CCol sm={2}>
-                            <CCard
-                                className="rounded-circle"
-                                style={{ maxWidth: '6rem' }}
-                            >
-                                <CCardBody>
-                                    <CCardTitle>포인트</CCardTitle>
-                                    <CCardText>0p</CCardText>
-                                </CCardBody>
-                            </CCard>
-                        </CCol>
-                        <CCol sm={2}>
-                            <CCard
-                                className="rounded-circle"
-                                style={{ maxWidth: '6rem' }}
-                            >
-                                <CCardBody className="fw-medium fs-4 lh-sm">
-                                    <CCardText>고객 센터</CCardText>
-                                </CCardBody>
-                            </CCard>
-                        </CCol>
-                        <CCol sm={2}>
-                            <CCard
-                                className="rounded-circle"
-                                style={{ maxWidth: '6rem' }}
-                            >
-                                <CCardBody className="fw-medium fs-4 lh-sm">
-                                    <CCardText>나의 정보</CCardText>
-                                </CCardBody>
-                            </CCard>
-                        </CCol>
-                    </CRow>
-                </CCardBody>
-            </CCard>
             {/* 주문상태 */}
             <CCard color="light" className="rounded-0">
                 <CCardBody className="text-center">
@@ -151,12 +88,18 @@ const Mypage: NextPage = () => {
 
             <CTable className="">
                 <CTableHead>
-                    <CTableRow style={{ height: '4rem' }}>
+                    <CTableRow className="fw-medium fs-4 lh-lg text-center">
                         <CTableHeaderCell scope="col" colSpan={5}>
                             주문리스트
                         </CTableHeaderCell>
                     </CTableRow>
                     <CTableRow>
+                        <CTableHeaderCell scope="col" colSpan={5} color="light">
+                            <span className="m-3">2022.01.01</span>
+                            <span>주문번호</span>
+                        </CTableHeaderCell>
+                    </CTableRow>
+                    <CTableRow className="text-center">
                         <CTableHeaderCell scope="col">
                             상품정보
                         </CTableHeaderCell>
