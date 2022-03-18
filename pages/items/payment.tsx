@@ -11,6 +11,7 @@ import {
     CRow,
     CCol,
     CCardImage,
+    CFormInput,
 } from '@coreui/react';
 
 const Payment: NextPage = () => {
@@ -20,6 +21,7 @@ const Payment: NextPage = () => {
                 <CCardHeader component="h5">상품 결제</CCardHeader>
                 <CCardBody>
                     <CCardTitle>결제 상품</CCardTitle>
+
                     <CCard className="mb-3">
                         <CRow sm={{ cols: 1, gutter: 3 }} md={{ cols: 4 }}>
                             <CCol md={2}>
@@ -72,6 +74,29 @@ const Payment: NextPage = () => {
                                 </CCardBody>
                             </CCol>
                         </CRow>
+                    </CCard>
+                    <CCard>
+                        <CCardBody>
+                            <CCardTitle>배송 정보</CCardTitle>
+                            <CRow className="align-items-center">
+                                <CCol xs={2}>
+                                    <CCardText>
+                                        서울시 강남구 테헤란로
+                                    </CCardText>
+                                </CCol>
+                                <CCol>
+                                    <CButton href="#" color="light">
+                                        배송지 변경
+                                    </CButton>
+                                </CCol>
+                            </CRow>
+                            <CCardText>홍길동 010-1234-5678</CCardText>
+                            <CFormInput
+                                type="text"
+                                placeholder="배송 메시지"
+                                className="w-50"
+                            />
+                        </CCardBody>
                     </CCard>
                     <CButton href="#">Go somewhere</CButton>
                 </CCardBody>
