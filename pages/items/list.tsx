@@ -28,12 +28,34 @@ import {
   CCardBody,
   CCardTitle,
   CCardText,
+  CBadge,
+  CAlert,
+  CAlertLink,
 } from "@coreui/react";
 
 const List: NextPage = () => {
   return (
     <div className="bg-light">
       <CContainer fluid>
+        <CRow className="mb-3">
+          <CCol className="text-center">
+            <h1>아우터</h1>
+          </CCol>
+        </CRow>
+
+        <CRow>
+          <CAlert color="light" className="d-flex">
+            <CFormInput
+              type="search"
+              className="w-25"
+              placeholder="키워드를 입력하세요."
+            />
+            <CButton type="submit" color="success" variant="outline">
+              검색
+            </CButton>
+          </CAlert>
+        </CRow>
+
         <CRow xs={{ cols: 1, gutter: 3 }} md={{ cols: 5 }} className="mb-3">
           <CCol xs>
             <CCard className="h-100">
