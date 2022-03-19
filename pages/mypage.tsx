@@ -7,15 +7,14 @@ import {
     CCardBody,
     CCardTitle,
     CCardText,
-    CCardFooter,
-    CCardHeader,
     CTable,
     CTableHead,
     CTableHeaderCell,
     CTableRow,
     CTableBody,
-    CTableDataCell,
+    CCardLink,
 } from '@coreui/react';
+import Link from 'next/link';
 
 const Mypage: NextPage = () => {
     return (
@@ -66,7 +65,11 @@ const Mypage: NextPage = () => {
                                 style={{ maxWidth: '6rem' }}
                             >
                                 <CCardBody className="fw-medium fs-4 lh-sm">
-                                    <CCardText>고객 센터</CCardText>
+                                    <CCardText>
+                                        <Link href="#t" passHref>
+                                            <CCardText>고객센터</CCardText>
+                                        </Link>
+                                    </CCardText>
                                 </CCardBody>
                             </CCard>
                         </CCol>
@@ -76,7 +79,16 @@ const Mypage: NextPage = () => {
                                 style={{ maxWidth: '6rem' }}
                             >
                                 <CCardBody className="fw-medium fs-4 lh-sm">
-                                    <CCardText>나의 정보</CCardText>
+                                    <Link href="/main" passHref>
+                                        <CCardLink
+                                            style={{
+                                                textDecorationLine: 'none',
+                                                color: 'black',
+                                            }}
+                                        >
+                                            나의 정보
+                                        </CCardLink>
+                                    </Link>
                                 </CCardBody>
                             </CCard>
                         </CCol>
