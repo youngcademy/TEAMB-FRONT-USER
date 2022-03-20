@@ -17,6 +17,8 @@ import {
     CFormCheck,
     CContainer,
     CImage,
+    CDropdownItem,
+    CDropdownDivider,
 } from '@coreui/react';
 
 const Main: NextPage = () => {
@@ -72,9 +74,13 @@ const Main: NextPage = () => {
                                     <CButton color="primary" href="#">
                                         LOGIN
                                     </CButton>
-                                    <CButton color="info" variant="ghost">
-                                        JOIN
-                                    </CButton>
+                                    <CDropdownDivider />
+                                    <CDropdownItem href="#">
+                                        New around here? Sign up
+                                    </CDropdownItem>
+                                    <CDropdownItem href="#">
+                                        Forgot password?
+                                    </CDropdownItem>
                                 </div>
                             </div>
                         </CForm>
