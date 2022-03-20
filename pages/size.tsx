@@ -17,6 +17,16 @@ import {
     CFormCheck,
     CContainer,
     CImage,
+    CNavbar,
+    CCollapse,
+    CDropdownToggle,
+    CDropdownItem,
+    CDropdownDivider,
+    CDropdownMenu,
+    CNavbarNav,
+    CNavbarBrand,
+    CDropdown,
+    CNavbarToggler,
 } from '@coreui/react';
 
 const Main: NextPage = () => {
@@ -49,6 +59,7 @@ const Main: NextPage = () => {
                             />
                         </div>
                     </div>
+
                     <CCol xs>
                         <CCol sm={10}>
                             <div className="d-grid gap-1 col-2 mx-auto">
@@ -86,9 +97,6 @@ const Main: NextPage = () => {
                         </CButton>
                         <CButton color="info" variant="ghost">
                             RESET
-                        </CButton>
-                        <CButton color="danger" variant="ghost">
-                            ADD DATA
                         </CButton>
                     </div>
                 </div>
