@@ -16,62 +16,71 @@ import {
     CButton,
     CFormCheck,
     CContainer,
+    CImage,
 } from '@coreui/react';
 
 const Main: NextPage = () => {
     return (
         <>
             <CCardBody>
-                <CCardTitle>Login</CCardTitle>
+                <CCardTitle>Login Page</CCardTitle>
             </CCardBody>
             <CCard>
-                <img
-                    src="https://images.unsplash.com/photo-1560849735-881abdac6a3d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=dan-smedley-RqTFUay48so-unsplash.jpg"
-                    alt="login"
-                    width={500}
-                    height={400}
-                />
-            </CCard>
-            <CContainer>
-                <CRow>
-                    <CCol className="align-self-center"></CCol>
-                    <CForm>
-                        <div className="mb-3">
-                            <div className="container w-50">
-                                <CFormLabel htmlFor="exampleInputEmail1">
-                                    Email address
-                                </CFormLabel>
-                                <CFormInput
-                                    type="email"
-                                    id="exampleInputEmail1"
-                                    aria-describedby="emailHelp"
-                                />
-                                <CFormText id="emailHelp">
-                                    We'll never share your email with anyone
-                                    else.
-                                </CFormText>
+                <div className="clearfix">
+                    <CImage
+                        align="center"
+                        rounded
+                        src="https://images.unsplash.com/photo-1560849735-881abdac6a3d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=dan-smedley-RqTFUay48so-unsplash.jpg"
+                        width={500}
+                        height={400}
+                    />
+                </div>
+                <CContainer>
+                    <CRow>
+                        <CCol className="align-self-center"></CCol>
+                        <CForm>
+                            <div className="mb-3">
+                                <div className="container w-50">
+                                    <CFormLabel htmlFor="exampleInputEmail1">
+                                        Email address
+                                    </CFormLabel>
+                                    <CFormInput
+                                        type="email"
+                                        id="exampleInputEmail1"
+                                        aria-describedby="emailHelp"
+                                    />
+                                    <CFormText id="emailHelp">
+                                        We'll never share your email with anyone
+                                        else.
+                                    </CFormText>
+                                </div>
                             </div>
-                        </div>
-                        <div className="mb-3">
-                            <div className="container w-50">
-                                <CFormLabel htmlFor="exampleInputPassword1">
-                                    Email Password
-                                </CFormLabel>
-                                <CFormInput
-                                    type="password"
-                                    id="exampleInputPassword1"
-                                />
+                            <div className="mb-3">
+                                <div className="container w-50">
+                                    <CFormLabel htmlFor="exampleInputPassword1">
+                                        Email Password
+                                    </CFormLabel>
+                                    <CFormInput
+                                        type="password"
+                                        id="exampleInputPassword1"
+                                    />
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="container w-50">
-                            <CButton type="submit" color="primary">
-                                Submit
-                            </CButton>
-                        </div>
-                    </CForm>
-                </CRow>
-            </CContainer>
+                            <div className="container w-50">
+                                <div className="d-grid gap-2 col-6 mx-auto">
+                                    <CButton color="primary" href="#">
+                                        LOGIN
+                                    </CButton>
+                                    <CButton color="info" variant="ghost">
+                                        JOIN
+                                    </CButton>
+                                </div>
+                            </div>
+                        </CForm>
+                    </CRow>
+                </CContainer>
+            </CCard>
 
             {/* footer */}
             <div className="footer">
