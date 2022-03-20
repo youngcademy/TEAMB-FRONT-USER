@@ -17,7 +17,7 @@ import {
     CTableDataCell,
 } from '@coreui/react';
 
-const Mypage: NextPage = () => {
+const OrderList: NextPage = () => {
     return (
         <>
             {/* 주문상태 */}
@@ -133,4 +133,4 @@ const Mypage: NextPage = () => {
     );
 };
 
-export default Mypage;
+export default OrderList;
