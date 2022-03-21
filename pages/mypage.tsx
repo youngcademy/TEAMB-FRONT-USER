@@ -163,12 +163,60 @@ const Mypage: NextPage = () => {
 
             <CTable className="">
                 <CTableHead>
-                    <CTableRow style={{ height: '4rem' }}>
+                    <CTableRow
+                        className="fw-medium fs-4 lh-lg text-center"
+                        style={{ height: '5rem' }}
+                    >
+                        <CTableHeaderCell scope="col" colSpan={5}>
+                            장바구니목록
+                        </CTableHeaderCell>
+                    </CTableRow>
+                    <CTableRow className="text-center">
+                        <CTableHeaderCell scope="col">
+                            상품정보
+                        </CTableHeaderCell>
+                        <CTableHeaderCell scope="col">
+                            주문일자
+                        </CTableHeaderCell>
+                        <CTableHeaderCell scope="col">
+                            주문번호
+                        </CTableHeaderCell>
+                        <CTableHeaderCell scope="col">
+                            주문금액
+                        </CTableHeaderCell>
+                        <CTableHeaderCell scope="col">
+                            주문상태
+                        </CTableHeaderCell>
+                    </CTableRow>
+                </CTableHead>
+                <CTableBody>
+                    <CTableRow className="text-center">
+                        <CTableHeaderCell
+                            scope="row"
+                            colSpan={5}
+                            style={{ height: '10rem' }}
+                        >
+                            주문내역이 없습니다
+                        </CTableHeaderCell>
+                    </CTableRow>
+                </CTableBody>
+            </CTable>
+
+            {/* 장바구니목록 */}
+            <CTable className="">
+                <CTableHead>
+                    <CTableRow className="fw-medium fs-4 lh-lg text-center">
                         <CTableHeaderCell scope="col" colSpan={5}>
                             주문리스트
                         </CTableHeaderCell>
                     </CTableRow>
                     <CTableRow>
+                        <CTableHeaderCell scope="col" colSpan={5} color="light">
+                            <span className="m-3">2022.01.01</span>
+                            <span>주문번호</span>
+                        </CTableHeaderCell>
+                    </CTableRow>
+                    <CTableRow className="text-center">
                         <CTableHeaderCell scope="col">
                             상품정보
                         </CTableHeaderCell>
