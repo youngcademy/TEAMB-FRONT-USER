@@ -25,7 +25,7 @@ const Main: NextPage = () => {
     return (
         <>
             <CCardBody>
-                <CCardTitle>Login Page</CCardTitle>
+                <CCardTitle>Recommend List</CCardTitle>
             </CCardBody>
             <CCard>
                 <div className="clearfix">
@@ -46,26 +46,6 @@ const Main: NextPage = () => {
                                     <CFormLabel htmlFor="exampleInputEmail1">
                                         Email address
                                     </CFormLabel>
-                                    <CFormInput
-                                        type="email"
-                                        id="exampleInputEmail1"
-                                        aria-describedby="emailHelp"
-                                    />
-                                    <CFormText id="emailHelp">
-                                        We'll never share your email with anyone
-                                        else.
-                                    </CFormText>
-                                </div>
-                            </div>
-                            <div className="mb-3">
-                                <div className="container w-50">
-                                    <CFormLabel htmlFor="exampleInputPassword1">
-                                        Email Password
-                                    </CFormLabel>
-                                    <CFormInput
-                                        type="password"
-                                        id="exampleInputPassword1"
-                                    />
                                 </div>
                             </div>
 
