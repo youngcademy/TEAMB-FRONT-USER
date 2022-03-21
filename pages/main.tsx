@@ -217,5 +217,5 @@ const Main: NextPage = () => {
 // const styles1 = {
 //     container: { padding: '0.5rem' },
 // } as const;
-
+// 전체 CSS사용 흔적. 전체 css를 걸어주는것보다 bootstrap의 className에서의css지정이 더욱효율적
 export default Main;
